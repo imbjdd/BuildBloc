@@ -1,5 +1,3 @@
-import NextLogo from './NextLogo'
-import SupabaseLogo from './SupabaseLogo'
 import DarkModeToggle from "@/components/Toggle";
 import { createClient } from '@/utils/supabase/server'
 import { cookies } from 'next/headers'
@@ -30,7 +28,7 @@ export default function Header() {
             <Link href="/">Home</Link>
           </div>
           <div className="flex items-center">
-            <p>Blog</p>
+            <p>About</p>
           </div>
           <div className="flex-grow"></div>
           <DarkModeToggle/>

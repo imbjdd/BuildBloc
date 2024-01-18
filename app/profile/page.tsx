@@ -1,9 +1,7 @@
-import Link from 'next/link'
-import { headers, cookies } from 'next/headers'
+import { cookies } from 'next/headers'
 import { createClient } from '@/utils/supabase/server'
 import { redirect } from 'next/navigation'
 import Button from '@/components/Button'
-import Button2 from '@/components/Button2'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
