@@ -6,6 +6,8 @@ import HackathonCard from "@/components/HackathonCard";
 import { Metadata } from 'next'
 import Footer from "@/components/Footer";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
+import Newsletter from "@/components/Newsletter";
+
 const {UilRocket} = require('@iconscout/react-unicons')
 
 export const metadata: Metadata = {
@@ -91,17 +93,7 @@ export default async function Index() {
        <div className="ml-4 h-0.5 grow bg-neutral-100 dark:bg-neutral-800"></div>
       </div>
 */}
-        <div className="hidden md:block mb-8 max-w-7xl mx-auto px-4 flex">
-          <div className="w-full">
-            <Image
-              alt="Bannière - Join the community"
-              src="/banner.jpg"
-              width={1214}
-              height={236}
-              className="h-auto w-full rounded-2xl"
-            />
-          </div>
-        </div>
+        <Newsletter />
 
         <Footer />
     </main>

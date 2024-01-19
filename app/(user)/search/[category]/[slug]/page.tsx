@@ -5,6 +5,7 @@ import Search from "@/components/Search";
 import HackathonCard from "@/components/HackathonCard";
 import { Metadata } from 'next'
 import Footer from "@/components/Footer"; // Import Footer component
+import Newsletter from "@/components/Newsletter";
 
 export const metadata: Metadata = {
   title: 'Search | SyncH - Find Local Hackathons',
@@ -43,17 +44,7 @@ export default async function Index({ params, searchParams }: { params: { slug: 
         </div>
       </section>
 
-      <div className="hidden md:block mb-8 max-w-7xl mx-auto px-4 flex">
-        <div className="w-full">
-          <Image
-            alt="Bannière - Join the community"
-            src="/banner.jpg"
-            width={1214}
-            height={236}
-            className="h-auto w-full rounded-2xl"
-          />
-        </div>
-      </div>
+      <Newsletter />
       <Footer /> {/* Use Footer component */}
     </main>
   )

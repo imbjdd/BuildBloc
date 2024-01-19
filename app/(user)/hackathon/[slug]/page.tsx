@@ -7,6 +7,7 @@ import { Metadata } from 'next'
 import Footer from "@/components/Footer";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 const {UilCalender} = require('@iconscout/react-unicons')
+import Newsletter from "@/components/Newsletter";
 
 export const metadata: Metadata = {
   title: 'Search | SyncH - Find Local Hackathons',
@@ -56,17 +57,8 @@ export default async function Index({ params }: { params: { slug: string, catego
                   <a href={hackathon.url} target="_blank" rel="noopener noreferrer" className="mt-2">{hackathon.url}</a>
                 </div>
             </section>
-            <div className="hidden md:block mb-8 max-w-7xl mx-auto px-4 flex">
-              <div className="w-full">
-                <Image
-            alt="Bannière - Join the community"
-            src="/banner.jpg"
-            width={1214}
-            height={236}
-            className="h-auto w-full rounded-2xl"
-          />
-        </div>
-      </div>
+
+      <Newsletter />
 
       <Footer />
     </main>
