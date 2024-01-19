@@ -33,7 +33,7 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
       return redirect('/register?message=We got an error')
     }
 
-    return redirect('/')
+    return redirect('/login?message=We sent you an email to confirm your account')
   }
 
   return (
