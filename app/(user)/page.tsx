@@ -63,6 +63,7 @@ export default async function Index() {
                   <HackathonCard key={hackathon.id} name={hackathon.name} date_begin={hackathon.date_begin} url={hackathon.url} themes={hackathon.theme}/>
                 )})
               )}
+              {hackathons.length%2 === 1 ? (<div className='hidden md:block grow w-5/12'></div>) : (<div></div>)}
             </div>
           </div>
       </section>
