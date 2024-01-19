@@ -23,13 +23,12 @@ const Dropdown = () => {
     return (
             <div onMouseLeave={() => {document.addEventListener("click", onClickOutsideListener)}} className="relative inline-block border-l-2 border-neutral-200 dark:border-neutral-700">
                 <input type="hidden" name="category" value={items[actualItem].toLowerCase()} />
-                <button
-                    type="button"
+                <p
                     className="w-24 md:w-32 flex justify-center py-2 text-neutral-600 overflow-hidden dark:text-neutral-300 rounded-lg font-medium text-sm inline-flex items-center"
-                    onClick={toggleDropdown}
+                    //onClick={toggleDropdown}
                 >
                     {items[actualItem]}
-                </button>
+                </p>
 
                 {isOpen && (
                     <div
@@ -37,7 +36,7 @@ const Dropdown = () => {
                           document.addEventListener("click", onClickOutsideListener)
                         }}
                         onMouseEnter={() => document.removeEventListener("click", onClickOutsideListener)}
-                        className="origin-top-right absolute right-0 mt-6 w-44 rounded-lg overflow-hidden shadow-lg bg-white dark:bg-neutral-800 dark:text-neutral-300 ring-1 ring-black ring-opacity-5"
+                        className="z-50 origin-top-right absolute right-0 mt-6 w-44 rounded-lg overflow-hidden shadow-lg bg-white dark:bg-neutral-800 dark:text-neutral-300 ring-1 ring-black ring-opacity-5"
                     >
                         <ul role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                             {items.map((item, i) => { return (
