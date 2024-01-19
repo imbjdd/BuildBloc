@@ -1,5 +1,5 @@
 import { GeistSans } from 'geist/font/sans'
-import './globals.css'
+import '@/app/globals.css'
 import { ThemeProvider } from "@/components/theme-provider"
 
 const defaultUrl = process.env.VERCEL_URL
@@ -12,25 +12,17 @@ export const metadata = {
   description: 'The fastest way to build apps with Next.js and Supabase',
 }
 
+import Header from "@/components/Header";
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={GeistSans.className}>
-      <body className="">
-        <ThemeProvider
-              attribute="class"
-              defaultTheme="system"
-              enableSystem
-              disableTransitionOnChange
-            >
-          <main className="dark:bg-neutral-950 dark:text-neutral-100 text-neutral-900 min-h-screen flex flex-col">
+    <>
+            <Header/>
             {children}
-          </main>
-        </ThemeProvider>
-      </body>
-    </html>
+    </>
   )
 }

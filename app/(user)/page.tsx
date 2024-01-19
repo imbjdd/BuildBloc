@@ -5,6 +5,8 @@ import Search from "@/components/Search";
 import HackathonCard from "@/components/HackathonCard";
 import { Metadata } from 'next'
 import Footer from "@/components/Footer";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
+const {UilRocket} = require('@iconscout/react-unicons')
 
 export const metadata: Metadata = {
   title: 'SyncH - Find Local Hackathons',
@@ -33,6 +35,15 @@ export default async function Index() {
     <main className="">
       <Search />
 
+      <div className="mt-8 max-w-7xl mx-auto px-4 flex">
+        <Alert>
+          <UilRocket className="h-4 w-4" />
+          <AlertTitle>Welcome to the beta test!</AlertTitle>
+          <AlertDescription>
+          We're actively looking for hackathon organizers, so get in touch!
+          </AlertDescription>
+        </Alert>
+      </div>
       <section className="py-8 mt-0">
       <div className="max-w-7xl mx-auto px-4 pb-4 flex items-center">
        <h1 className="text-3xl font-bold ">Open Hackathons in France 🧭</h1>
