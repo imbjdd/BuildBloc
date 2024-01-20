@@ -1,6 +1,5 @@
 import { createClient } from '@/utils/supabase/server'
 import { cookies } from 'next/headers'
-import Image from 'next/image'
 import Search from "@/components/Search";
 import HackathonCard from "@/components/HackathonCard";
 import { Metadata } from 'next'
