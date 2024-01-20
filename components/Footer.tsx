@@ -19,8 +19,8 @@ export default function Footer () {
         </div>
         <div className="gap-4 flex flex-row text-left">
           <Link href="/">Blog</Link>
-          <Link href="/">Roadmap</Link>
-          <Link href="/">Source</Link>
+          <a href="https://atom-caution-eb6.notion.site/aa6c615237a24b10a3b9a840a8eda931?v=64eef0256f2c49b5a7be3871165db388&pvs=4" target='_blank'>Roadmap</a>
+          <a href="https://github.com/imbjdd/SyncH/" target='_blank'>Source</a>
         </div>
       </div>
     </footer>
