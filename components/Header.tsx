@@ -28,7 +28,7 @@ export default function Header() {
             <Link href="/">Home</Link>
           </div>
           <div className="flex items-center">
-            <p>About</p>
+            <Link href="/about">About</Link>
           </div>
           <div className="flex-grow"></div>
           <DarkModeToggle/>
