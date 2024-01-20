@@ -1,6 +1,5 @@
 import { createClient } from '@/utils/supabase/server'
 import { cookies } from 'next/headers'
-import Image from 'next/image'
 import Search from "@/components/Search";
 import HackathonCard from "@/components/HackathonCard";
 import { Metadata } from 'next'
@@ -37,9 +36,14 @@ export default async function Index({ params, searchParams }: { params: { slug: 
       </div>
         <div className="px-4 max-w-7xl mx-auto">
           <div className="pt-2 flex gap-6 flex-wrap">
-            {hackathons.map(hackathon => { return (
-              <HackathonCard key={hackathon.id} name={hackathon.name} date_begin={hackathon.date_begin} url={hackathon.url} themes={hackathon.theme}/>
-            )})}
+            {hackathons.length === 0 ? (
+                  <p>No hackathons found. Send us a mail if you are interested !</p>
+                ) : (
+                  hackathons.map(hackathon => { return (
+                    <HackathonCard key={hackathon.id} name={hackathon.name} date_begin={hackathon.date_begin} url={hackathon.url} themes={hackathon.theme}/>
+                  )})
+                )}
+                {hackathons.length%2 === 1 ? (<div className='hidden md:block grow w-5/12'></div>) : (<div></div>)}
           </div>
         </div>
       </section>
