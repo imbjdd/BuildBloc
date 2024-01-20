@@ -1,93 +1,109 @@
-<a href="https://demo-nextjs-with-supabase.vercel.app/">
-  <img alt="Next.js and Supabase Starter Kit - the fastest way to build apps with Next.js and Supabase" src="https://demo-nextjs-with-supabase.vercel.app/opengraph-image.png">
-  <h1 align="center">Next.js and Supabase Starter Kit</h1>
-</a>
-
-<p align="center">
- The fastest way to build apps with Next.js and Supabase
-</p>
-
-<p align="center">
-  <a href="#features"><strong>Features</strong></a> ·
-  <a href="#demo"><strong>Demo</strong></a> ·
-  <a href="#deploy-to-vercel"><strong>Deploy to Vercel</strong></a> ·
-  <a href="#clone-and-run-locally"><strong>Clone and run locally</strong></a> ·
-  <a href="#feedback-and-issues"><strong>Feedback and issues</strong></a>
-  <a href="#more-supabase-examples"><strong>More Examples</strong></a>
-</p>
 <br/>
+<p align="center">
+  <a href="https://github.com/imbjdd/syncH">
+    <img src="public/favicon.ico" alt="Logo" width="80" height="80">
+  </a>
 
-## Features
+  <h3 align="center">SyncH</h3>
 
-- Works across the entire [Next.js](https://nextjs.org) stack
-  - App Router
-  - Pages Router
-  - Middleware
-  - Client
-  - Server
-  - It just works!
-- supabase-ssr. A package to configure Supabase Auth to use cookies
-- Styling with [Tailwind CSS](https://tailwindcss.com)
-- Optional deployment with [Supabase Vercel Integration and Vercel deploy](#deploy-your-own)
-  - Environment variables automatically assigned to Vercel project
+  <p align="center">
+     Empowering local innovation through the promotion of hackathons and fostering builders' communities on our platform 
+    <br/>
+    <br/>
+    <a href="https://github.com/imbjdd/syncH"><strong>Explore the docs »</strong></a>
+    <br/>
+    <br/>
+    <a href="https://sync-h.vercel.app/">View Demo</a>
+    .
+    <a href="https://github.com/imbjdd/syncH/issues">Report Bug</a>
+    .
+    <a href="https://github.com/imbjdd/syncH/issues">Request Feature</a>
+  </p>
+</p>
 
-## Demo
+![Contributors](https://img.shields.io/github/contributors/imbjdd/syncH?color=dark-green) ![Stargazers](https://img.shields.io/github/stars/imbjdd/syncH?style=social) ![Issues](https://img.shields.io/github/issues/imbjdd/syncH) ![License](https://img.shields.io/github/license/imbjdd/syncH?) 
 
-You can view a fully working demo at [demo-nextjs-with-supabase.vercel.app](https://demo-nextjs-with-supabase.vercel.app/).
+## Table Of Contents
 
-## Deploy to Vercel
+* [About the Project](#about-the-project)
+* [Built With](#built-with)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+* [Usage](#usage)
+* [Roadmap](#roadmap)
+* [Contributing](#contributing)
+* [License](#license)
+* [Authors](#authors)
 
-Vercel deployment will guide you through creating a Supabase account and project.
+## About The Project
 
-After installation of the Supabase integration, all relevant environment variables will be assigned to the project so the deployment is fully functioning.
+A few days ago I had a problem: I was looking for hackathons near where I live (Paris, France) but couldn't find any updated lists. So I decided to solve the problem: the aim of the platform is to promote local hackathons and builders' communities.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fwith-supabase&project-name=nextjs-with-supabase&repository-name=nextjs-with-supabase&demo-title=nextjs-with-supabase&demo-description=This%20starter%20configures%20Supabase%20Auth%20to%20use%20cookies%2C%20making%20the%20user's%20session%20available%20throughout%20the%20entire%20Next.js%20app%20-%20Client%20Components%2C%20Server%20Components%2C%20Route%20Handlers%2C%20Server%20Actions%20and%20Middleware.&demo-url=https%3A%2F%2Fdemo-nextjs-with-supabase.vercel.app%2F&external-id=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fwith-supabase&demo-image=https%3A%2F%2Fdemo-nextjs-with-supabase.vercel.app%2Fopengraph-image.png&integration-ids=oac_VqOgBHqhEoFTPzGkPd7L0iH6)
+## Built With
 
-The above will also clone the Starter kit to your GitHub, you can clone that locally and develop locally.
+This project was made possible thanks to these incredible frameworks!
 
-If you wish to just develop locally and not deploy to Vercel, [follow the steps below](#clone-and-run-locally).
+* [Next.js](https://nextjs.org/)
+* [Supabase](https://supabase.com/)
 
-## Clone and run locally
+## Getting Started
 
-1. You'll first need a Supabase project which can be made [via the Supabase dashboard](https://database.new)
+To get a local copy up and running follow these simple example steps.
 
-2. Create a Next.js app using the Supabase Starter template npx command
+### Prerequisites
 
-   ```bash
-   npx create-next-app -e with-supabase
-   ```
+* npm
 
-3. Use `cd` to change into the app's directory
+### Installation
 
-   ```bash
-   cd name-of-new-app
-   ```
+1. Clone the repo
 
-4. Rename `.env.local.example` to `.env.local` and update the following:
+```sh
+git clone https://github.com/your_username_/Project-Name.git
+```
 
-   ```
-   NEXT_PUBLIC_SUPABASE_URL=[INSERT SUPABASE PROJECT URL]
-   NEXT_PUBLIC_SUPABASE_ANON_KEY=[INSERT SUPABASE PROJECT API ANON KEY]
-   ```
+2. Install NPM packages
 
-   Both `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` can be found in [your Supabase project's API settings](https://app.supabase.com/project/_/settings/api)
+```sh
+npm install
+```
 
-5. You can now run the Next.js local development server:
+3. Enter your supabase API in `env.example`
 
-   ```bash
-   npm run dev
-   ```
+```env
+API_KEY = 'ENTER YOUR API'
+```
 
-   The starter kit should now be running on [localhost:3000](http://localhost:3000/).
+## Usage
 
-> Check out [the docs for Local Development](https://supabase.com/docs/guides/getting-started/local-development) to also run Supabase locally.
+For hackathon organizers, you can list your hackathons on our platform.
+For users, you can see the list of available hackathons near you.
 
-## Feedback and issues
+## Roadmap
 
-Please file feedback and issues over on the [Supabase GitHub org](https://github.com/supabase/supabase/issues/new/choose).
+See our [Roadmap](https://atom-caution-eb6.notion.site/aa6c615237a24b10a3b9a840a8eda931?v=64eef0256f2c49b5a7be3871165db388&pvs=4)!
 
-## More Supabase examples
+## Contributing
 
-- [Next.js Subscription Payments Starter](https://github.com/vercel/nextjs-subscription-payments)
-- [Cookie-based Auth and the Next.js 13 App Router (free course)](https://youtube.com/playlist?list=PL5S4mPUpp4OtMhpnp93EFSo42iQ40XjbF)
-- [Supabase Auth and the Next.js App Router](https://github.com/supabase/supabase/tree/master/examples/auth/nextjs)
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+* If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/imbjdd/syncH/issues/new) to discuss it, or directly create a pull request after you edit the *README.md* file with necessary changes.
+* Please make sure you check your spelling and grammar.
+* Create individual PR for each suggestion.
+* Please also read through the [Code Of Conduct](https://github.com/imbjdd/syncH/blob/main/CODE_OF_CONDUCT.md) before posting your first idea as well.
+
+### Creating A Pull Request
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+Distributed under the MIT License. See [LICENSE](https://github.com/imbjdd/syncH/blob/main/LICENSE.md) for more information.
+
+## Authors
+
+* **Bjdd** - *Mathematics Student* - [Bjdd](https://github.com/imbjdd) - *SyncH Founder*
