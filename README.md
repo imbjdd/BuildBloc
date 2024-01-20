@@ -21,7 +21,7 @@
   </p>
 </p>
 
-![Contributors](https://img.shields.io/github/contributors/imbjdd/syncH?color=dark-green) ![Stargazers](https://img.shields.io/github/stars/imbjdd/syncH?style=social) ![Issues](https://img.shields.io/github/issues/imbjdd/syncH) ![License](https://img.shields.io/github/license/imbjdd/syncH) 
+![Contributors](https://img.shields.io/github/contributors/imbjdd/syncH?color=dark-green) ![Stargazers](https://img.shields.io/github/stars/imbjdd/syncH?style=social) ![Issues](https://img.shields.io/github/issues/imbjdd/syncH) ![License](https://img.shields.io/github/license/imbjdd/syncH?) 
 
 ## Table Of Contents
 
