@@ -24,7 +24,7 @@ export default function HackathonCard ({ name, date_begin, url, themes } : {name
               key={theme}
               className="p-2 h-fit dark:border-emerald-100 dark:text-emerald-100 font-bold border-2 border-emerald-800 text-emerald-800 rounded-full flex items-center "
             >
-              <p className="uppercase text-xs">{theme}</p>
+              <Link href={'/theme/'+theme} className="uppercase text-xs">{theme}</Link>
             </div>
           )})}
           </div>
