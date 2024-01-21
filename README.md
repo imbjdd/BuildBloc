@@ -13,7 +13,7 @@
     <a href="https://github.com/imbjdd/BuildBloc"><strong>Explore the docs »</strong></a>
     <br/>
     <br/>
-    <a href="https://sync-h.vercel.app/">View Demo</a>
+    <a href="https://www.buildbloc.rocks/">View Demo</a>
     .
     <a href="https://github.com/imbjdd/BuildBloc/issues">Report Bug</a>
     .
