@@ -15,7 +15,7 @@ export default async function Index({ params }: { params: { theme: string } }) {
 
   const supabase = createClient(cookieStore);
 
-  let { data: hackathons } = await supabase.from('list').select().contains('theme', [params.theme])
+  let { data: hackathons } = await supabase.from('list').select().contains('theme', [params.theme]).limit(8).order('date_begin', { ascending: true })
 
   if(!hackathons) hackathons = []
 

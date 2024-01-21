@@ -25,6 +25,7 @@ export default async function Index() {
     .select()
     .filter('date_end', 'gte', todayDate)
     .limit(8)
+    .order('date_begin', { ascending: true })
 
   if(!hackathons) hackathons = []
 
@@ -62,7 +63,7 @@ export default async function Index() {
                   <HackathonCard key={hackathon.id} name={hackathon.name} date_begin={hackathon.date_begin} url={hackathon.url} themes={hackathon.theme}/>
                 )})
               )}
-              {hackathons.length%2 === 1 ? (<div className='hidden md:block grow w-5/12'></div>) : (<div></div>)}
+              <div className={'hidden ' + (hackathons.length%2 === 1 ? 'md:block grow w-5/12 ':'')}></div>
             </div>
           </div>
       </section>

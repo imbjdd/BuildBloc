@@ -21,7 +21,7 @@ export default async function Index({ params, searchParams }: { params: { slug: 
 
   const element: string = db[params.category] || 'list';
 
-  let { data: hackathons } = await supabase.from(element).select().ilike('name', '%'+ params.slug +'%')
+  let { data: hackathons } = await supabase.from(element).select().ilike('name', '%'+ params.slug +'%').limit(8).order('date_begin', { ascending: true })
 
   if(!hackathons) hackathons = []
 
