@@ -5,7 +5,7 @@ import Button from '@/components/Button'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Apply | SyncH - Find Local Hackathons',
+  title: 'Apply | BuildBloc - Find Local Hackathons',
 }
 
 export default function Login({

@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import Newsletter from "@/components/Newsletter";
 
 export const metadata: Metadata = {
-  title: 'SyncH - Find Local Hackathons',
+  title: 'BuildBloc - Find Local Hackathons',
 }
 
 export default async function Index() {
@@ -15,7 +15,7 @@ export default async function Index() {
             <div className="ml-4 h-0.5 grow bg-neutral-100 dark:bg-neutral-800"></div>
         </div>
         <div className="px-4 max-w-7xl mx-auto">
-            <p>SyncH is a project that aims to centralize all the hackathons in France. It is a project that is still in development, and we are looking for people to help us develop it. If you are interested, please contact us at <a href="mailto:hello@bjdd.me"><span className="font-bold">E-mail</span></a>.</p>
+            <p>BuildBloc is a project that aims to centralize all the hackathons in France. It is a project that is still in development, and we are looking for people to help us develop it. If you are interested, please contact us at <a href="mailto:hello@bjdd.me"><span className="font-bold">E-mail</span></a>.</p>
         </div>
       </section>
 

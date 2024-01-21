@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import Newsletter from "@/components/Newsletter";
 
 export const metadata: Metadata = {
-  title: 'SyncH - Find Local Hackathons',
+  title: 'BuildBloc - Find Local Hackathons',
 }
 
 export default async function Index() {

@@ -1,27 +1,27 @@
 <br/>
 <p align="center">
-  <a href="https://github.com/imbjdd/syncH">
+  <a href="https://github.com/imbjdd/BuildBloc">
     <img src="public/favicon.ico" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">SyncH</h3>
+  <h3 align="center">BuildBloc</h3>
 
   <p align="center">
      Empowering local innovation through the promotion of hackathons and fostering builders' communities on our platform 
     <br/>
     <br/>
-    <a href="https://github.com/imbjdd/syncH"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/imbjdd/BuildBloc"><strong>Explore the docs »</strong></a>
     <br/>
     <br/>
     <a href="https://sync-h.vercel.app/">View Demo</a>
     .
-    <a href="https://github.com/imbjdd/syncH/issues">Report Bug</a>
+    <a href="https://github.com/imbjdd/BuildBloc/issues">Report Bug</a>
     .
-    <a href="https://github.com/imbjdd/syncH/issues">Request Feature</a>
+    <a href="https://github.com/imbjdd/BuildBloc/issues">Request Feature</a>
   </p>
 </p>
 
-![Contributors](https://img.shields.io/github/contributors/imbjdd/syncH?color=dark-green) ![Stargazers](https://img.shields.io/github/stars/imbjdd/syncH?style=social) ![Issues](https://img.shields.io/github/issues/imbjdd/syncH) ![License](https://img.shields.io/github/license/imbjdd/syncH?) 
+![Contributors](https://img.shields.io/github/contributors/imbjdd/BuildBloc?color=dark-green) ![Stargazers](https://img.shields.io/github/stars/imbjdd/BuildBloc?style=social) ![Issues](https://img.shields.io/github/issues/imbjdd/BuildBloc) ![License](https://img.shields.io/github/license/imbjdd/BuildBloc?) 
 
 ## Table Of Contents
 
@@ -87,10 +87,10 @@ See our [Roadmap](https://atom-caution-eb6.notion.site/aa6c615237a24b10a3b9a840a
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-* If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/imbjdd/syncH/issues/new) to discuss it, or directly create a pull request after you edit the *README.md* file with necessary changes.
+* If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/imbjdd/BuildBloc/issues/new) to discuss it, or directly create a pull request after you edit the *README.md* file with necessary changes.
 * Please make sure you check your spelling and grammar.
 * Create individual PR for each suggestion.
-* Please also read through the [Code Of Conduct](https://github.com/imbjdd/syncH/blob/main/CODE_OF_CONDUCT.md) before posting your first idea as well.
+* Please also read through the [Code Of Conduct](https://github.com/imbjdd/BuildBloc/blob/main/CODE_OF_CONDUCT.md) before posting your first idea as well.
 
 ### Creating A Pull Request
 
@@ -102,8 +102,8 @@ Contributions are what make the open source community such an amazing place to b
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/imbjdd/syncH/blob/main/LICENSE.md) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/imbjdd/BuildBloc/blob/main/LICENSE.md) for more information.
 
 ## Authors
 
-* **Bjdd** - *Mathematics Student* - [Bjdd](https://github.com/imbjdd) - *SyncH Founder*
+* **Bjdd** - *Mathematics Student* - [Bjdd](https://github.com/imbjdd) - *BuildBloc Founder*

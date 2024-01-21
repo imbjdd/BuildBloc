@@ -10,7 +10,7 @@ import Newsletter from "@/components/Newsletter";
 const {UilRocket} = require('@iconscout/react-unicons')
 
 export const metadata: Metadata = {
-  title: 'SyncH - Find Local Hackathons',
+  title: 'BuildBloc - Find Local Hackathons',
 }
 
 export default async function Index() {

@@ -10,7 +10,7 @@ const {UilCalender} = require('@iconscout/react-unicons')
 import Newsletter from "@/components/Newsletter";
 
 export const metadata: Metadata = {
-  title: 'Search | SyncH - Find Local Hackathons',
+  title: 'Search | BuildBloc - Find Local Hackathons',
 }
 
 export default async function Index({ params }: { params: { slug: string, category: string } }) {

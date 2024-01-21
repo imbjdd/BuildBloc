@@ -7,7 +7,7 @@ import Footer from "@/components/Footer"; // Import Footer component
 import Newsletter from "@/components/Newsletter";
 
 export const metadata: Metadata = {
-  title: 'Search | SyncH - Find Local Hackathons',
+  title: 'Search | BuildBloc - Find Local Hackathons',
 }
 
 export default async function Index({ params }: { params: { theme: string } }) {
