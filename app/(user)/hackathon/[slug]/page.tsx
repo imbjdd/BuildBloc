@@ -29,6 +29,8 @@ export default async function Index({ params }: { params: { slug: string, catego
   // there is no hackathon, it's sad
   if(!hackathon) redirect('/')
 
+  const eventDuration = Math.round((parseISO(hackathon.date_end).getTime() - parseISO(hackathon.date_begin).getTime()) / (1000 * 60 * 60 * 24));
+
   return (
     <main className="">
       <section className="py-8 mt-0">
@@ -46,7 +48,7 @@ export default async function Index({ params }: { params: { slug: string, catego
               </div>
             </AlertTitle>
             <AlertDescription>
-              This event will last two days!
+              This event will last {eventDuration} day{eventDuration > 1 ? 's':''}!
             </AlertDescription>
           </Alert>
           <h2 className='text-xl font-bold mt-8'>Description</h2>
