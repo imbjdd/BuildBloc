@@ -1,8 +1,10 @@
+import { NextResponse } from 'next/server'
+
 export async function POST (request: Request) {
   const { email } = await request.json();
 
   if (!email) {
-    return Response.json({ error: 'Email is required' });
+    return NextResponse.json({ error: 'Email is required' });
   }
 
   try {
@@ -28,14 +30,14 @@ export async function POST (request: Request) {
     )
 
     if (response.status >= 400) {
-      return Response.json({
+      return NextResponse.json({
         error: `There was an error subscribing to the newsletter.
         Hit me up peter@peterlunch.com and I'll add you the old fashioned way :(.`,
       });
     }
 
-    return Response.json({ error: '' });
+    return NextResponse.json({ error: '' });
   } catch (error: any) {
-    return Response.json({ error: error.message || error.toString() });
+    return NextResponse.json({ error: error.message || error.toString() });
   }
 };
