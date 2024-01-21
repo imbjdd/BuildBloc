@@ -4,14 +4,29 @@ import { useState } from 'react';
 
 export default function Newsletter() {
     const [email, setEmail] = useState('');
+    const [subscribed, setSubscribed] = useState(false)
 
     const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setEmail(e.target.value);
+        setEmail(e.target.value)
     };
 
-    const handleJoinNewsletter = () => {
+    const handleJoinNewsletter = async () => {
         // TODO: Implement join newsletter logic
         console.log('Joining newsletter with email:', email);
+
+        const res = await fetch('/api/subscribeUser', {
+            body: JSON.stringify({
+              email: email,
+            }),
+      
+            headers: {
+              'Content-Type': 'application/json',
+            },
+      
+            method: 'POST',
+          })
+
+        setSubscribed(true)
     };
 
     return (
@@ -27,6 +42,7 @@ export default function Newsletter() {
                             value={email}
                             onChange={handleEmailChange}
                             className="hidden md:block placeholder:text-neutral-600 dark:placeholder:text-neutral-300 grow h-12 w-1/4 px-4 md:px-8 bg-neutral-100 dark:bg-neutral-900"
+                            disabled={subscribed}
                         />
                         <input
                             type="email"
@@ -34,12 +50,14 @@ export default function Newsletter() {
                             value={email}
                             onChange={handleEmailChange}
                             className="block md:hidden placeholder:text-neutral-600 dark:placeholder:text-neutral-300 grow h-12 w-1/4 px-4 md:px-8 bg-neutral-100 dark:bg-neutral-900"
+                            disabled={subscribed}
                         />
                         <button
                             onClick={handleJoinNewsletter}
-                            className="bg-emerald-800 dark:bg-emerald-800 text-white dark:text-white px-2 md:px-6 font-semibold"
+                            className={"text-white dark:text-white px-2 md:px-6 font-semibold "+(subscribed?"bg-neutral-800 dark:bg-neutral-800":"bg-emerald-800 dark:bg-emerald-800")}
+                            disabled={subscribed}
                         >
-                            Subscribe
+                            {subscribed?'Subscribed':'Subscribe'}
                         </button>
                     </div>
                 </div>
