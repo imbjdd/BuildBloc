@@ -10,9 +10,6 @@
      Empowering local innovation through the promotion of hackathons and fostering builders' communities on our platform 
     <br/>
     <br/>
-    <a href="https://github.com/imbjdd/BuildBloc"><strong>Explore the docs »</strong></a>
-    <br/>
-    <br/>
     <a href="https://www.buildbloc.rocks/">View Demo</a>
     .
     <a href="https://github.com/imbjdd/BuildBloc/issues">Report Bug</a>
