@@ -18,10 +18,10 @@ const defaultUrl = process.env.VERCEL_URL
       url: 'https://nextjs.org',
       siteName: 'BuildBloc - Find Local Hackathons',
       type: 'website',
-      image: 'https://www.buildbloc.rocks/twitter-image.png'
+      image: 'https://www.buildbloc.rocks/og.png'
     },
     twitter: {
-      images: ['https://www.buildbloc.rocks/twitter-image.png'],
+      images: ['https://www.buildbloc.rocks/og.png'],
       cardType: 'summary_large_image',
     },
   }
