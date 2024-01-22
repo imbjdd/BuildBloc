@@ -11,7 +11,14 @@ const defaultUrl = process.env.VERCEL_URL
   export const metadata = {
     metadataBase: new URL(defaultUrl),
     title: 'BuildBloc - Find Local Hackathons',
-    description: 'Empowering local innovation through the promotion of hackathons and fostering builders\' communities on our platform ',
+    description: 'Empowering local innovation through the promotion of hackathons and fostering builders\' communities on our platform!',
+    openGraph: {
+      title: 'BuildBloc - Find Local Hackathons',
+      description: 'Empowering local innovation through the promotion of hackathons and fostering builders\' communities on our platform!',
+      url: 'https://nextjs.org',
+      siteName: 'BuildBloc - Find Local Hackathons',
+      type: 'website',
+    },
   }
 
 export default function RootLayout({
